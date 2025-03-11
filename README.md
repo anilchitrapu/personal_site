@@ -1,23 +1,80 @@
-# Personal Site
+# Anil Chitrapu - Personal Website
 
-Built a static interim site via Python and [Flask](http://flask.pocoo.org/).
-Deployed with [Frozen-Flask](https://pythonhosted.org/Frozen-Flask/) and [Netlify](https://www.netlify.com/).
+A clean, minimal personal website built with Next.js.
 
-## Development
+## Features
 
-There's currently no linter, so if that is added/any new packages are installed, remember to update `requirements.txt`:
+- Responsive design
+- Dark mode support
+- Simple, content-focused layout
+- Visual experience timeline with images
+- Next.js App Router
+- JavaScript
 
-```sh
-pip freeze > requirements.txt
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18.x or later
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/anilchitrapu/personal-site.git
+cd personal-site
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Run the development server
+```bash
+npm run dev
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Building for Production
+
+```bash
+npm run build
+```
+
+Then, you can start the production server:
+
+```bash
+npm run start
 ```
 
 ## Deployment
 
-<a href="https://www.netlify.com">
-  <img src="https://www.netlify.com/img/global/badges/netlify-dark.svg"/>
-</a>
+This site can be easily deployed to Vercel, Netlify, or any other Next.js-compatible hosting platform.
 
-### Netlify settings
+## Site Structure
 
-* Build command: `python freeze.py`
-* Publish directory: `build`
+- **Header**: Name, title, tagline, and social links
+- **About**: Personal introduction and background
+- **Experience**: Professional experience with visual timeline
+- **Projects**: Notable projects with images and descriptions
+
+## Customization
+
+The site uses CSS variables for theming. You can modify the colors in `src/app/globals.css`:
+
+```css
+:root {
+  --background: #f4f4f4;
+  --text-primary: #161616;
+  --text-secondary: #525252;
+  --link: #0f62fe;
+  --link-hover: #0043ce;
+  --placeholder-bg: #e0e0e0;
+}
+```
+
+## License
+
+MIT
