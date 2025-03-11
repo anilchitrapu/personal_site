@@ -23,8 +23,8 @@ export default function Home() {
           Since graduating in 2016, I have been fortunate to work directly on consumer-facing products and drive growth through user-centric product management.
         </p>
         <p>
-          My main focus these days is building new products and features at The New York Times. I work as a product manager on Wirecutter, NYT's commerce arm, 
-          as we seek to expand out our user base and improve the ways we provide the best recommendations to people.
+          My main focus these days is driving growth at The New York Times. I work as a product manager on Wirecutter, NYT's commerce arm, 
+          focusing on newsletter growth, review page optimization, personalization, AI integrations, and more to help users discover the best product recommendations.
         </p>
         <p>
           Before NYT, I worked on building features for Condé Nast's frontend application. We enabled Vogue, The New Yorker, WIRED, and 60+ other brands 
@@ -47,6 +47,30 @@ export default function Home() {
         <div className="item">
           <div className="item-image">
             <img 
+              src="https://cdn.thewirecutter.com/wp-content/media/2024/08/NYT-Wirecutter-Podcast-Trailer-Launch-3x2-1.jpg?auto=webp&quality=75&crop=3:2&width=1024" 
+              alt="The New York Times Wirecutter" 
+              className="project-image"
+            />
+          </div>
+          <div className="item-content">
+            <h3>Product Manager, Growth · The New York Times (Wirecutter)</h3>
+            <p className="period">June 2024 – Present</p>
+            <p>
+              Working on growth initiatives for Wirecutter.
+            </p>
+            <div className="skills">
+              <span className="tag">Next.js</span>
+              <span className="tag">TypeScript</span>
+              <span className="tag">JIRA</span>
+              <span className="tag">GitHub</span>
+              <span className="tag">Mode</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="item">
+          <div className="item-image">
+            <img 
               src="https://strapi-bus-eng-prod.s3.amazonaws.com/CN_DI_Report_75574b3cd0.jpg" 
               alt="Condé Nast" 
               className="project-image"
@@ -54,7 +78,7 @@ export default function Home() {
           </div>
           <div className="item-content">
             <h3>Product Manager, Consumer Experiences · Condé Nast</h3>
-            <p className="period">2021 – PRESENT</p>
+            <p className="period">2021 – May 2024</p>
             <p>
               Responsible for the design system and content rendering engine for Condé Nast's 67 brand sites across 32 global markets. 
               Leading a distributed team of 7 engineers and 1 designer.
