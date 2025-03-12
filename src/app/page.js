@@ -53,7 +53,7 @@ export default function Home() {
             />
           </div>
           <div className="item-content">
-            <h3>Product Manager, Growth · The New York Times (Wirecutter)</h3>
+            <h3>Product Manager, Growth · NYT Wirecutter</h3>
             <p className="period">June 2024 – Present</p>
             <p>
               Working on growth initiatives for Wirecutter.
