@@ -1,4 +1,4 @@
-# Anil Chitrapu - Personal Website
+# Personal website
 
 A clean, minimal personal website built with Next.js.
 
