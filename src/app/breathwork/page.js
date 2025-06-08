@@ -1,11 +1,6 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-
-export const metadata = {
-  title: "breathwork",
-  description: "4-7-8 breathing exercise, threejs, gsap"
-};
 import * as THREE from 'three';
 import { gsap } from 'gsap';
 
