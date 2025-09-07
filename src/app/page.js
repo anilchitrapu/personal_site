@@ -49,7 +49,7 @@ export default function Home() {
             />
           </div>
         <div className="item-content">
-          <h3>Senior Product Manager, Growth · NYT Wirecutter</h3>
+          <h3>Senior Product Manager, Growth · <a href="https://www.nytimes.com/wirecutter" aria-label="NYT Wirecutter">NYT Wirecutter</a></h3>
           <p className="period">June 2024 – Present</p>
           <p>
             Leading growth initiatives for Wirecutter, including building AI-powered frontend applications, driving top-of-funnel user acquisition, optimizing and expanding newsletters, and developing personalized user experiences. I also collaborate closely with New York Times teams on joint features and cross-brand initiatives to maximize impact.
@@ -66,7 +66,7 @@ export default function Home() {
             />
           </div>
         <div className="item-content">
-          <h3>Product Manager, Consumer Experiences · Condé Nast</h3>
+          <h3>Product Manager, Consumer Experiences · <a href="https://www.condenast.com/" aria-label="Condé Nast">Condé Nast</a></h3>
           <p className="period">2021 – May 2024</p>
           <p>
             Responsible for the design system and content rendering engine for Condé Nast's 67 brand sites across 32 global markets. 
@@ -84,7 +84,7 @@ export default function Home() {
             />
           </div>
         <div className="item-content">
-          <h3>Senior Manager, Growth · Condé Nast</h3>
+          <h3>Senior Manager, Growth · <a href="https://www.condenast.com/" aria-label="Condé Nast">Condé Nast</a></h3>
           <p className="period">2020 – 2021</p>
           <p>
             Led growth, audience development, and analytics for podcasts and narrated audio across all Condé Nast brands.
@@ -101,7 +101,7 @@ export default function Home() {
             />
           </div>
         <div className="item-content">
-          <h3>Senior Analyst, Growth Marketing · SeatGeek</h3>
+          <h3>Senior Analyst, Growth Marketing · <a href="https://seatgeek.com" aria-label="SeatGeek">SeatGeek</a></h3>
           <p className="period">2017 – 2020</p>
           <p>
             Drove strategy and growth of paid social, display, and programmatic marketing across acquisition and retargeting objectives.
@@ -126,7 +126,7 @@ export default function Home() {
             />
           </div>
           <div className="item-content">
-            <h3>Growth Advisor · Therapy Notebooks</h3>
+            <h3>Growth Advisor · <a href="https://www.therapynotebooks.com" aria-label="Therapy Notebooks">Therapy Notebooks</a></h3>
             <p>
               Guided mental health notebooks made by expert therapists and backed by research. 
               Advising on growth, influencer, and paid media strategy.
