@@ -1,93 +1,100 @@
 :root {
-  --background: #f4f4f4;
-  --text-primary: #161616;
-  --text-secondary: #525252;
-  --link: #0f62fe;
-  --link-hover: #0043ce;
-  --placeholder-bg: #e0e0e0;
+  --background: #ffffff;
+  --text-primary: #111111;
+  --text-secondary: #6b7280;
+  --link: #111111;
+  --link-hover: #000000;
+  --placeholder-bg: #f2f2f2;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #161616;
-    --text-primary: #f4f4f4;
-    --text-secondary: #c6c6c6;
-    --link: #78a9ff;
-    --link-hover: #a6c8ff;
-    --placeholder-bg: #393939;
+    --background: #0c0c0c;
+    --text-primary: #f5f5f5;
+    --text-secondary: #a3a3a3;
+    --link: #f5f5f5;
+    --link-hover: #ffffff;
+    --placeholder-bg: #1a1a1a;
   }
 }
 
 body {
   background: var(--background);
   color: var(--text-primary);
-  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.25rem;
   margin-top: 0;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 0.9rem;
   font-weight: 600;
-  margin-bottom: 2rem;
-  color: var(--text-primary);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+  color: var(--text-secondary);
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 600;
+  margin-top: 0;
   margin-bottom: 0.25rem;
 }
 
 p {
   margin-top: 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   font-size: 1rem;
 }
 
 a {
   color: var(--link);
   text-decoration: none;
-  transition: color 0.2s;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
 }
 
 a:hover {
   color: var(--link-hover);
+  border-color: currentColor;
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 760px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 1rem 3rem;
 }
 
 header {
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 
 header h2 {
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-size: 1rem;
+  font-weight: 500;
   margin-top: 0;
   margin-bottom: 1.5rem;
   color: var(--text-secondary);
 }
 
 .tagline {
-  font-size: 1.25rem;
+  font-size: 1.05rem;
+  color: var(--text-secondary);
   margin-bottom: 1rem;
 }
 
 section {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .period {
@@ -97,16 +104,16 @@ section {
 }
 
 .item, .project {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .item-image {
   flex-shrink: 0;
-  width: 160px;
-  height: 160px;
-  border-radius: 8px;
+  width: 120px;
+  height: 120px;
+  border-radius: 6px;
   overflow: hidden;
 }
 
@@ -126,29 +133,7 @@ section {
   flex: 1;
 }
 
-.tag {
-  background-color: #e0e0e0;
-  color: #161616;
-  padding: 0.25rem 0.75rem;
-  border-radius: 1rem;
-  font-size: 0.875rem;
-  display: inline-block;
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-@media (prefers-color-scheme: dark) {
-  .tag {
-    background-color: #393939;
-    color: #f4f4f4;
-  }
-}
-
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 0.5rem;
-}
+/* Removed chip-style tag elements for a minimalist look */
 
 .resume-link {
   margin-top: 2rem;
@@ -156,9 +141,36 @@ section {
 
 .social {
   display: flex;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
   flex-wrap: wrap;
+}
+
+.social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-bottom: none;
+}
+
+.social img {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.social svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+  .social img {
+    filter: invert(1);
+  }
 }
 
 @media (max-width: 768px) {
@@ -167,7 +179,7 @@ section {
   }
   
   h1 {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
   }
   
   .social {
@@ -181,6 +193,6 @@ section {
   
   .item-image {
     width: 100%;
-    height: 200px;
+    height: 180px;
   }
 }
