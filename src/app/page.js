@@ -110,7 +110,7 @@ export default function Home() {
       </div>
 
         <div className="resume-link">
-          <a href="https://drive.google.com/file/d/1EmPKpXSk6yHBAxmeR1PROx0BjkEZyMRN/view?usp=sharing">View Resumé</a>
+          <a href="https://drive.google.com/file/d/1d5WMImrpO66rsiQ7gQPctbGUKuTCHLuf/view?usp=sharing">View Resumé</a>
         </div>
       </section>
 
