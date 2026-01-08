@@ -1,1 +1,1 @@
-A little bit amount me!
+A little bit about me!
