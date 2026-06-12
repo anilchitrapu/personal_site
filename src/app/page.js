@@ -1,139 +1,157 @@
+import LocalTime from "./components/LocalTime";
+
+const experience = [
+  {
+    role: "Senior Product Manager, Wirecutter",
+    org: "The New York Times",
+    url: "https://www.nytimes.com/wirecutter",
+    period: "2024 – 2025",
+    blurb: (
+      <>
+        Worked on growth across AI, experimentation, acquisition, and
+        community. Shipped{" "}
+        <a href="https://theaudiencers.com/how-nyt-wirecutter-shipped-a-personalized-newsletter-in-4-weeks/">
+          Wirecutter For You
+        </a>
+        , the brand's first personalized newsletter, on an ML recommendation
+        engine built in four weeks. Also launched chapter navigation across
+        every review, recovered millions in annual search revenue, and brought
+        Wirecutter onto the NYT Community platform.
+      </>
+    ),
+  },
+  {
+    role: "Product Manager, Consumer Experiences",
+    org: "Condé Nast",
+    url: "https://www.condenast.com/",
+    period: "2021 – 2024",
+    blurb:
+      "Owned the design system and content rendering engine behind 67 brand sites in 32 markets, Vogue and The New Yorker included. Led a distributed team of seven engineers and a designer.",
+  },
+  {
+    role: "Senior Manager, Growth",
+    org: "Condé Nast",
+    url: "https://www.condenast.com/",
+    period: "2020 – 2021",
+    blurb:
+      "Grew podcasts past 12 million monthly downloads and launched five chart-topping series with Vogue, WIRED, and Pitchfork.",
+  },
+  {
+    role: "Senior Analyst, Growth Marketing",
+    org: "SeatGeek",
+    url: "https://seatgeek.com",
+    period: "2017 – 2020",
+    blurb:
+      "Scaled paid acquisition from $50K to $1M+ a month and helped grow concerts into the company's biggest event category.",
+  },
+];
+
+const lab = [
+  {
+    name: "breathwork",
+    url: "/breathwork",
+    blurb:
+      "A WebGL breathing exercise: one sphere, custom shaders, a 4-7-8 cycle. Built in a weekend with Three.js.",
+  },
+  {
+    name: "Therapy Notebooks",
+    url: "https://www.therapynotebooks.com",
+    blurb:
+      "Growth advisor for guided mental health notebooks designed by therapists and backed by research.",
+  },
+];
+
 export default function Home() {
   return (
-    <div className="container">
-      <header>
-        <h1>Anil Chitrapu</h1>
-        <h2>Product Manager</h2>
-        <p className="tagline">
-          I build products that meaningfully scale engagement and revenue – leading teams to deliver features used by millions and pioneering AI-driven experiences that transform workflows.
+    <div className="page">
+      <header className="masthead">
+        <h1>
+          Anil Chitrapu<span className="cursor" aria-hidden="true" />
+        </h1>
+        <p className="role mono">product manager · apple news · new york</p>
+        <p className="intro">
+          I am a product manager for{" "}
+          <a href="https://www.apple.com/apple-news/">Apple News</a>, getting
+          great journalism in front of millions of readers. Before that I spent
+          nine years building and growing products at The New York Times, Condé
+          Nast, and SeatGeek. I work on and with AI: shipping features that put
+          it in people's hands and using it to make teams faster.
         </p>
-        <div className="social">
-          <a href="https://github.com/anilchitrapu" aria-label="GitHub" title="GitHub">
-            <img alt="GitHub" src="https://cdn.simpleicons.org/github" width="24" height="24" />
-          </a>
-          <a href="https://www.linkedin.com/in/anilchitrapu" aria-label="LinkedIn" title="LinkedIn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-            </svg>
-          </a>
-          <a href="https://x.com/anilchitrapu" aria-label="X" title="X (Twitter)">
-            <img alt="X" src="https://cdn.simpleicons.org/x" width="24" height="24" />
-          </a>
-        </div>
       </header>
 
-      <section className="about">
-        <p>
-          I’m a Senior Product Manager at The New York Times (Wirecutter), where I drive growth by building impactful, user-centric products. My work spans AI features, personalization, newsletter growth, and more traditional growth initiatives that not only expand audience reach but also generate millions in commerce revenue. I’m particularly focused on AI’s potential in both shipping user-facing features that create tangible, measurable impact as well as 10x-ing internal workflows with advanced tools to ship faster and more frequently.
-        </p>
-        <p>
-          Previously at Condé Nast, I scaled the design system and frontend platform powering 67 global brand sites - from Vogue to The New Yorker - leading teams that delivered extensible, high-impact solutions across dozens of markets. Earlier at SeatGeek, I built and scaled user acquisition programs that grew into $10M+ annualized revenue.
-        </p>
-        <p>
-          Beyond my current role, I have advised startups on growth strategy, bridging user engagement with scalable marketing systems.
-        </p>
-        <p>
-          Outside of work, you’ll find me running in McCarren Park, practicing Carnatic music, or stressing over the latest Arsenal, Eagles, and Sixers games.
-        </p>
-      </section>
-
-      <section className="experience">
-        <h2>Experience</h2>
-        
-        <div className="item">
-          <div className="item-image">
-            <img 
-              src="https://cdn.thewirecutter.com/wp-content/media/2024/08/NYT-Wirecutter-Podcast-Trailer-Launch-3x2-1.jpg?auto=webp&quality=75&crop=3:2&width=1024" 
-              alt="The New York Times Wirecutter" 
-              className="project-image"
-            />
-          </div>
-        <div className="item-content">
-          <h3>Senior Product Manager, Growth · <a href="https://www.nytimes.com/wirecutter" aria-label="NYT Wirecutter">NYT Wirecutter</a></h3>
-          <p className="period">June 2024 – Present</p>
+      <section className="row">
+        <h2 className="mono label">01 / now</h2>
+        <div className="row-body">
           <p>
-            Leading growth initiatives for Wirecutter, including building AI-powered frontend applications, driving top-of-funnel user acquisition, optimizing and expanding newsletters, and developing personalized user experiences. I also collaborate closely with New York Times teams on joint features and cross-brand initiatives to maximize impact.
+            At Apple, I work across news, sports, audio, food, and puzzles,
+            bringing great journalism and experiences to millions of people
+            around the world. My focus spans AI, growth, infrastructure, and
+            analytics: taking journalism seriously as a product, then sweating
+            the details until it feels effortless.
           </p>
-        </div>
-      </div>
-
-        <div className="item">
-          <div className="item-image">
-            <img 
-              src="https://strapi-bus-eng-prod.s3.amazonaws.com/CN_DI_Report_75574b3cd0.jpg" 
-              alt="Condé Nast" 
-              className="project-image"
-            />
-          </div>
-        <div className="item-content">
-          <h3>Product Manager, Consumer Experiences · <a href="https://www.condenast.com/" aria-label="Condé Nast">Condé Nast</a></h3>
-          <p className="period">2021 – May 2024</p>
-          <p>
-            Responsible for the design system and content rendering engine for Condé Nast's 67 brand sites across 32 global markets. 
-            Leading a distributed team of 7 engineers and 1 designer.
-          </p>
-        </div>
-      </div>
-
-        <div className="item">
-          <div className="item-image">
-            <img 
-              src="https://redtechpro.b-cdn.net/wp-content/uploads/2022/06/Inside-Podcasting-3-Conde-Nast-Studio-A-copy.jpg" 
-              alt="Condé Nast Audio" 
-              className="project-image"
-            />
-          </div>
-        <div className="item-content">
-          <h3>Senior Manager, Growth · <a href="https://www.condenast.com/" aria-label="Condé Nast">Condé Nast</a></h3>
-          <p className="period">2020 – 2021</p>
-          <p>
-            Led growth, audience development, and analytics for podcasts and narrated audio across all Condé Nast brands.
-          </p>
-        </div>
-      </div>
-
-        <div className="item">
-          <div className="item-image">
-            <img 
-              src="https://www.officelovin.com/wp-content/uploads/2020/01/seatgeek-nyc-office-mm.jpg" 
-              alt="SeatGeek" 
-              className="project-image"
-            />
-          </div>
-        <div className="item-content">
-          <h3>Senior Analyst, Growth Marketing · <a href="https://seatgeek.com" aria-label="SeatGeek">SeatGeek</a></h3>
-          <p className="period">2017 – 2020</p>
-          <p>
-            Drove strategy and growth of paid social, display, and programmatic marketing across acquisition and retargeting objectives.
-          </p>
-        </div>
-      </div>
-
-        <div className="resume-link">
-          <a href="https://drive.google.com/file/d/1d5WMImrpO66rsiQ7gQPctbGUKuTCHLuf/view?usp=sharing">View Resumé</a>
         </div>
       </section>
 
-      <section className="projects">
-        <h2>Projects</h2>
-        
-        <div className="project">
-          <div className="item-image">
-            <img 
-              src="https://framerusercontent.com/images/76GiSHhbknw0nesjh9UaICRqlHI.webp" 
-              alt="Therapy Notebooks" 
-              className="project-image"
-            />
-          </div>
-          <div className="item-content">
-            <h3>Growth Advisor · <a href="https://www.therapynotebooks.com" aria-label="Therapy Notebooks">Therapy Notebooks</a></h3>
-            <p>
-              Guided mental health notebooks made by expert therapists and backed by research. 
-              Advising on growth, influencer, and paid media strategy.
-            </p>
-          </div>
+      <section className="row">
+        <h2 className="mono label">02 / before</h2>
+        <div className="row-body">
+          <ol className="timeline">
+            {experience.map((job) => (
+              <li key={`${job.org}-${job.role}`} className="entry">
+                <div className="entry-head">
+                  <h3>{job.role}</h3>
+                  <span className="mono period">{job.period}</span>
+                </div>
+                <p className="mono org">
+                  <a href={job.url}>{job.org}</a>
+                </p>
+                <p className="blurb">{job.blurb}</p>
+              </li>
+            ))}
+          </ol>
+          <p className="mono resume">
+            <a href="https://drive.google.com/file/d/1d5WMImrpO66rsiQ7gQPctbGUKuTCHLuf/view?usp=sharing">
+              full resume ↗
+            </a>
+          </p>
         </div>
       </section>
+
+      <section className="row">
+        <h2 className="mono label">03 / other work</h2>
+        <div className="row-body">
+          <ul className="lab-list">
+            {lab.map((item) => (
+              <li key={item.name} className="entry">
+                <h3>
+                  <a href={item.url}>{item.name}</a>
+                </h3>
+                <p className="blurb">{item.blurb}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section className="row">
+        <h2 className="mono label">04 / about me</h2>
+        <div className="row-body">
+          <p>
+            You can find me running loops around McCarren Park, practicing
+            Carnatic music, and feeling personally responsible for Arsenal,
+            Eagles, and Sixers results.
+          </p>
+        </div>
+      </section>
+
+      <footer className="footer mono">
+        <nav className="footer-links" aria-label="Social links">
+          <a href="https://github.com/anilchitrapu">github</a>
+          <a href="https://www.linkedin.com/in/anilchitrapu">linkedin</a>
+          <a href="https://x.com/anilchitrapu">x</a>
+        </nav>
+        <LocalTime />
+      </footer>
     </div>
   );
-} 
+}
